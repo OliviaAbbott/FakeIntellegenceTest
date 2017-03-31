@@ -2,11 +2,12 @@ function Start()
 {
   window.location.href= "Q1.html";
 }
+var incorrect = 0;
 
 function getAnswer1()
 {
  var userInput = document.getElementById("solution").value;
- var incorrect = 0;
+
  if (userInput != 72)
  {
     alert("Incorrect Answer");
@@ -39,7 +40,7 @@ function getAnswer3()
 {
   var userInput = document.getElementById("solution").value;
   var incorrect = 0;
-  if (userInput != 43)
+  if (userInput != 63)
   {
     alert("Incorrect Answer");
     incorrect++;
