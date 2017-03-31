@@ -1,5 +1,5 @@
-//Olivia Abbott
-//March 22, 2017
+<!--Olivia Abbott
+March 22, 2017-->
 
 <!DOCTYPE html>
 <html>
@@ -7,26 +7,28 @@
     <meta charset="utf-8" />
     <!-- BOOTSTRAP (style only)-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <title> Intellegence Test </title>
     <script type="text/javascript" src="test.js"></script>
   <head>
 
-  <body lang="en-US">
-    <h1> "Intellegence test" </h1>
+  <body lang="en-US" >
+    <h1> Intellegence test </h1>
     <ul>
-      <li> "    " </li>
-      <li> "    " </li>
-      <li> "    " </li>
-      <li> "    " </li>
-      <li> "    " </li>
+      <li>8 + 2 = 60</li>
+      <li>4 + 12 = -128</li>
+      <li>7 + 4 = 33</li>
+      <li>13 + 5 = 144</li>
+      <li>6 + 15 = -189</li>
+      <li>9 + 6 = ?</li>
     </ul>
 
-    <p> "   " </p>
-
     <form action="/action_page.php">
-      Solution: <input type="text" id="solution" oninput="getAnswer2();"><br>
-      <!--<input type="submit" value="Submit">-->
-      <button type="button" id="nextButton" onclick="nextQuestion2();">
+      Solution: <input type="text" id="solution"><br>
+      <button type="button" id="submitButton" onclick="getAnswer2();">
+        Submit
+      </button>
+      <button hidden="hidden" type="button" id="nextButton" onclick="nextQuestion2();">
         Next
       </button>
     </form>
