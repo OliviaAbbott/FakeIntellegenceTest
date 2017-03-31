@@ -8,5 +8,17 @@ img {
 }
 
 body{
-  background-color: LightGoldenRodYellow ;
+  background-color: LightGoldenRodYellow;
+}
+
+ul{
+  font-size: 30px;
+}
+
+h1{
+  font-size: 40px;
+}
+
+button{
+  font-size: 30px;
 }

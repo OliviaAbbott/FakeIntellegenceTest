@@ -1,14 +1,18 @@
+var incorrect;
+
 function Start()
 {
   window.location.href= "Q1.html";
 }
-var incorrect = 0;
 
+function initializeIncorrect()
+{
+  incorrect = 0;
+}
 function getAnswer1()
 {
  var userInput = document.getElementById("solution").value;
-
- if (userInput != 72)
+ if(userInput != 72)
  {
     alert("Incorrect Answer");
     incorrect++;
@@ -23,7 +27,6 @@ function getAnswer1()
 function getAnswer2()
 {
   var userInput = document.getElementById("solution").value;
-  var incorrect = 0;
   if (userInput != 45)
   {
      alert("Incorrect Answer");
@@ -39,7 +42,6 @@ function getAnswer2()
 function getAnswer3()
 {
   var userInput = document.getElementById("solution").value;
-  var incorrect = 0;
   if (userInput != 63)
   {
     alert("Incorrect Answer");
@@ -72,11 +74,13 @@ function results(){
   var two = Number(getCookie("two"));
   var three = Number(getCookie("three"));
   var total = Number(one + two + three);
+  var numberAnswers = Number(total + 3);
+  var percentage = Number(3/numberAnswers * 100);
   document.getElementById("one").innerHTML = "Incorrect: " + one + " times";
   document.getElementById("two").innerHTML = "Incorrect: " + two + " times";
   document.getElementById("three").innerHTML = "Incorrect: " + three + " times";
   document.getElementById("total").innerHTML = "Total Incorrect: " + total + " times";
-
+  document.getElementById("percentage").innerHTML = percentage + "%";
 }
 
 //functions setCookie and getCookie are courtesy of w3schools
